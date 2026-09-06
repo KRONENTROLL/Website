@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    color: black;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.logo-small {
+    width: 150px;
+    height: auto;
+}
+
+.logo-smaller {
+    width: 50px;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    padding: 15px 30px;
+    background-color: lightslategrey;
+}
+
+.header-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.header-links a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 30px;
+    background-color: lightslategrey;
+}
+
+.footer-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: brown;
+    text-decoration: underline;
+}
