@@ -1,9 +1,4 @@
 *
 
-!/css/
-!/html/
-!/png/
-
-!/css/**
-!/html/**
-!/png/**
+!*.html
+!*.css
