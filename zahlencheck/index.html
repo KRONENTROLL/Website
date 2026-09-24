@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../kronentrollsdesign.css">
+    <link rel="icon" type="image/png" href="../pictures/favicon.png">
+    <script src="../JavaScript/header.js" defer></script>
+    <script src="../JavaScript/footer.js" defer></script>
+    <script src="../JavaScript/zahlencheck.js" defer></script>
+    <title>Hallo</title>
+</head>
+
+<body>
+<my-header></my-header>
+
+<h1>Zahlencheck</h1>
+
+<label for="zahlEingabe">Deine Zahl:</label>
+<input type="text" id="zahlEingabe" name="name" placeholder="Gib deine Zahl hier ein..." onkeydown="if(event.key === 'Enter') zahlencheck()">
+<button onclick="zahlencheck()">Eingeben</button>
+
+<p id="zahlAusgabe"></p>
+<p id="positivneutralnegativAusgabe"></p>
+<p id="geradeungeradeAusgabe"></p>
+<p id="quadratAusgabe"></p>
+<p id="zahlenkleineralsdiezahlabergroeßeralsnullAusgabe"></p>
+<p id="teilerAusgabe"></p>
+<p id="primzahlAusgabe"></p>
+<p id="zahlenSummeAusgabe"></p>
+
+<br>
+
+<my-footer></my-footer>
+</body>
+
+</html>

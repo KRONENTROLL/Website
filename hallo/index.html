@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../kronentrollsdesign.css">
+    <link rel="icon" type="image/png" href="../pictures/favicon.png">
+    <script src="../JavaScript/header.js" defer></script>
+    <script src="../JavaScript/footer.js" defer></script>
+    <script src="../JavaScript/hallo.js" defer></script>
+    <title>Hallo</title>
+</head>
+
+<body>
+<my-header></my-header>
+
+<p><h1>Hallo!</h1>
+
+<label for="nameEingabe">Dein Name:</label>
+<input type="text" id="nameEingabe" name="name" placeholder="Gib deinen Namen ein..." onkeydown="if(event.key === 'Enter') nameEingabeUndAusgabe()">
+<button onclick="nameEingabeUndAusgabe()">Eingeben</button>
+
+<p id="nameAusgabe">Hier erscheint das Ergebnis.</p>
+<br>
+&nbsp;
+
+<my-footer></my-footer>
+</body>
+
+</html>
