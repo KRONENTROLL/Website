@@ -8,7 +8,7 @@ function zahlencheck() {
     let teilerAusgabe = document.getElementById("teilerAusgabe");
     let primzahlAusgabe = document.getElementById("primzahlAusgabe");
     let zahlenSummeAusgabe = document.getElementById("zahlenSummeAusgabe");
-    
+
     zahlAusgabe.textContent = "";
     positivneutralnegativAusgabe.textContent = "";
     geradeungeradeAusgabe.textContent = "";
@@ -21,7 +21,7 @@ function zahlencheck() {
     let eingabeText = zahlEingabe.value.trim();
 
     if (eingabeText === "" || isNaN(Number(eingabeText)) || !Number.isInteger(Number(eingabeText))) {
-        zahlAusgabe.textContent = "Bitte gib eine ganze Zahl ein.";
+        zahlAusgabe.textContent = "Bitte gib eine ganze Zahl ein";
         return;
     }
 
@@ -50,21 +50,30 @@ function zahlencheck() {
         }
         zahlenkleineralsdiezahlabergroeßeralsnullAusgabe.textContent = "Alle Zahlen von 1 bis " + zahl + " sind: " + zahlenListe.join(", ");
     } else {
-        zahlenkleineralsdiezahlabergroeßeralsnullAusgabe.textContent = "Es gibt keine Zahlen von 1 bis " + zahl + "(Da sie kleiner als 2 ist.)";
+        zahlenkleineralsdiezahlabergroeßeralsnullAusgabe.textContent = "Es gibt keine Zahlen von 1 bis " + zahl + " (Da sie kleiner als 2 ist)";
     }
 
     let teilerListe = [];
-    let absoluteZahl = Math.abs(zahl);
-    for (let i = 1; i <= absoluteZahl; i++) {
-        if (absoluteZahl % i === 0) {
-            teilerListe.push(i);
+    if (zahl === 0) {
+        teilerAusgabe.textContent = "Die Zahl " + zahl + " hat unendlich Teiler";
+    } else {
+        let absoluteZahl = Math.abs(zahl);
+        for (let i = absoluteZahl; i >= 1; i--) {
+            if (absoluteZahl % i === 0) {
+                teilerListe.push(-i);
+            }
         }
+        for (let i = 1; i <= absoluteZahl; i++) {
+            if (absoluteZahl % i === 0) {
+                teilerListe.push(i);
+            }
+        }
+        teilerAusgabe.textContent = "Die Teiler von " + zahl + " sind: " + teilerListe.join(", ");
     }
-    teilerAusgabe.textContent = "Die Teiler von " + zahl + " sind: " + teilerListe.join(", ");
 
     if (zahl < 0) {
         primzahlAusgabe.textContent = "Die Zahl " + zahl + " ist keine Primzahl (weil sie negativ ist)"
-    } else if (teilerListe.length === 2) {
+    } else if (teilerListe.length === 4) {
         primzahlAusgabe.textContent = "Die Zahl " + zahl + " ist eine Primzahl";
     } else {
         primzahlAusgabe.textContent = "Die Zahl " + zahl + " ist keine Primzahl";
@@ -74,6 +83,6 @@ function zahlencheck() {
         let summeallerzahlenzwischeneinsundderzahl = (zahl * (zahl + 1)) / 2;
         zahlenSummeAusgabe.textContent = "Die Summe aller Zahlen von 1 bis " + zahl + " ist: " + summeallerzahlenzwischeneinsundderzahl;
     } else {
-        zahlenSummeAusgabe.textContent = "Die Summe aller Zahlen von 1 bis " + zahl + " ist nicht definiert. (Weil sie kleiner als 1 ist.)";
+        zahlenSummeAusgabe.textContent = "Die Summe aller Zahlen von 1 bis " + zahl + " ist nicht definiert (Weil sie kleiner als 1 ist)";
     }
 }

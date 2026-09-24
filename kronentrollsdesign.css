@@ -39,7 +39,7 @@ h1 {
 }
 
 .header-links a:hover {
-    color: brown;
+    color: #01408f;
     text-decoration: underline;
 }
 
@@ -59,6 +59,6 @@ h1 {
 }
 
 .footer-links a:hover {
-    color: brown;
+    color: #01408f;
     text-decoration: underline;
 }
