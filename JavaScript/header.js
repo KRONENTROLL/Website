@@ -4,6 +4,7 @@ class MyHeader extends HTMLElement {
         this.innerHTML = `
             <header class="header">
                 <a href="https://kronentroll.de"><img src="../pictures/logo.png" alt="Logo" class="logo-small"></a>
+
                 <h1>KRONENTROLLs Website</h1>
                 <nav class="header-links">
                     <a href="https://kronentroll.de">Startseite</a>

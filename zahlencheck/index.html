@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../kronentrollsdesign.css">
     <link rel="icon" type="image/png" href="../pictures/favicon.png">
     <script src="../JavaScript/header.js" defer></script>
@@ -18,7 +19,7 @@
 <h1>Zahlencheck</h1>
 
 <label for="zahlEingabe">Deine ganze Zahl:</label>
-<input type="text" id="zahlEingabe" name="name" placeholder="Gib deine Zahl hier ein..." onkeydown="if(event.key === 'Enter') zahlencheck()">
+<input type="text" id="zahlEingabe" name="name" placeholder="Gib deine Zahl hier ein" onkeydown="if(event.key === 'Enter') zahlencheck()">
 <button onclick="zahlencheck()">Eingeben</button>
 
 <p id="zahlAusgabe"></p>

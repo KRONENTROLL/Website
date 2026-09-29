@@ -1,64 +1,136 @@
-body {
-    font-family: sans-serif;
-    color: black;
-    background-color: white;
+@media (max-width: 940px) {
+    body {
+        font-family: sans-serif;
+        color: black;
+        background-color: white;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .logo-small {
+        width: 60px;
+        height: auto;
+    }
+
+    .logo-smaller {
+        width: 40px;
+        height: auto;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 10px 10px 10px;
+        background-color: lightslategrey;
+        font-size: 10px;
+    }
+
+    .header-links {
+        margin-left: auto;
+
+    }
+
+    .header-links a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+    }
+
+    .header-links a:hover {
+        color: #01408f;
+        text-decoration: underline;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 10px;
+        background-color: lightslategrey;
+        font-size: 10px;
+    }
+
+    .footer-links a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: #01408f;
+        text-decoration: underline;
+    }
 }
 
-h1 {
-    text-align: center;
-}
+@media (min-width: 940px) {
+    body {
+        font-family: sans-serif;
+        color: black;
+        background-color: white;
+    }
 
-.logo-small {
-    width: 150px;
-    height: auto;
-}
+    h1 {
+        text-align: center;
+    }
 
-.logo-smaller {
-    width: 50px;
-    height: auto;
-}
+    .logo-small {
+        width: 150px;
+        height: auto;
+    }
 
-.header {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 15px 75px 15px 15px;
-    background-color: lightslategrey;
-}
-    
-.header-links {
-    margin-left: auto;
-    
-}
+    .logo-smaller {
+        width: 50px;
+        height: auto;
+    }
 
-.header-links a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s;
-}
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 15px 75px 15px 15px;
+        background-color: lightslategrey;
+    }
 
-.header-links a:hover {
-    color: #01408f;
-    text-decoration: underline;
-}
+    .header-links {
+        margin-left: auto;
 
-.footer {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 15px 15px;
-    background-color: lightslategrey;
-}
+    }
 
-.footer-links a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s;
-}
+    .header-links a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+    }
 
-.footer-links a:hover {
-    color: #01408f;
-    text-decoration: underline;
+    .header-links a:hover {
+        color: #01408f;
+        text-decoration: underline;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 15px 15px;
+        background-color: lightslategrey;
+    }
+
+    .footer-links a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: #01408f;
+        text-decoration: underline;
+    }
 }

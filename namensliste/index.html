@@ -9,14 +9,21 @@
     <link rel="icon" type="image/png" href="../pictures/favicon.png">
     <script src="../JavaScript/header.js" defer></script>
     <script src="../JavaScript/footer.js" defer></script>
-    <title>Kontakt</title>
+    <script src="../JavaScript/namensliste.js" defer></script>
+    <title>Namensliste</title>
 </head>
 
 <body>
 <my-header></my-header>
-<p>
-    Kontaktiere mich per E-Mail: <a href="mailto:mail@kronentroll.de" style="color: brown; text-decoration: none;">mail@kronentroll.de</a>
-</p>
+
+<h1>Namensliste</h1>
+
+<label for="nameEingabe">Name hinzufügen:</label>
+<input type="text" id="nameEingabe" name="name" placeholder="Gib den Namen hier ein" onkeydown="if(event.key === 'Enter') namensliste()">
+<button onclick="namensliste()">Eingeben</button>
+
+<p id="nameAusgabe"></p>
+
 <my-footer></my-footer>
 </body>
 
