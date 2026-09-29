@@ -133,4 +133,11 @@
         color: #01408f;
         text-decoration: underline;
     }
+
+        .links a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+    }
 }
