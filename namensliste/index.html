@@ -21,8 +21,13 @@
 <label for="nameEingabe">Name hinzufügen:</label>
 <input type="text" id="nameEingabe" name="name" placeholder="Gib den Namen hier ein" onkeydown="if(event.key === 'Enter') namensliste()">
 <button onclick="namensliste()">Eingeben</button>
+<button onclick="zufall()">Zufall</button>
+<button onclick="zuruecksetzen()">Zurücksetzen</button>
+<ul id="nameAusgabe"></ul>
 
-<p id="nameAusgabe"></p>
+<p id="anzahlAusgabe"></p>
+
+<p><b id="alleGewaehltAusgabe"></b></p>
 
 <my-footer></my-footer>
 </body>

@@ -7,6 +7,7 @@ class MyFooter extends HTMLElement {
                 <nav class="footer-links">
                     <a href="https://kronentroll.de">Startseite</a>
                     <a href="https://kronentroll.de/zahlencheck">Zahlencheck</a>
+                    <a href="https://kronentroll.de/namensliste">Namensliste</a>
                     <a href="https://kronentroll.de/ueber-mich">Über mich</a>
                     <a href="https://kronentroll.de/kontakt">Kontakt</a>
                     &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&copy 2026 KRONENTROLL
